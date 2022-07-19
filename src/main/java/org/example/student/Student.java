@@ -14,7 +14,7 @@ public class Student {
 
     private String name;
     private String surname;
-    private String student_id;
+    private String studentId;
     private Department department;
     private Set<Course> courses;
     private int age;
@@ -36,12 +36,12 @@ public class Student {
         this.surname = surname;
     }
 
-    public String getStudent_id() {
-        return student_id;
+    public String getStudentId() {
+        return studentId;
     }
 
-    public void setStudent_id(String student_id) {
-        this.student_id = student_id;
+    public void setStudentId(String studentId) {
+        this.studentId = studentId;
     }
 
     public Department getDepartment() {
