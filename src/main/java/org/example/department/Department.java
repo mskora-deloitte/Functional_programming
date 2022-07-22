@@ -17,6 +17,13 @@ public class Department {
         this.students = students;
     }
 
+    @Override
+    public String toString() {
+        return "Department{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }

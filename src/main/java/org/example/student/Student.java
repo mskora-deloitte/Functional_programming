@@ -8,8 +8,8 @@ import java.util.Set;
 public class Student {
 
     public enum Gender {
-        Male,
-        Female
+        MALE,
+        FEMALE
     }
 
     private String name;
@@ -19,6 +19,30 @@ public class Student {
     private Set<Course> courses;
     private int age;
     private Gender gender;
+
+    public Student() {
+    }
+
+    public Student(String name, String surname, String studentId, int age, Gender gender) {
+        this.name = name;
+        this.surname = surname;
+        this.studentId = studentId;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", studentId='" + studentId + '\'' +
+                ", department=" + department +
+                ", courses=" + courses +
+                ", age=" + age +
+                ", gender=" + gender +
+                '}';
+    }
 
     public String getName() {
         return name;

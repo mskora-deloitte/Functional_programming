@@ -12,6 +12,18 @@ public class Course {
         this.name = name;
     }
 
+    public Course(String name, String courseId) {
+        this.name = name;
+        this.courseId = courseId;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "courseId='" + courseId + '\'' +
+                '}';
+    }
+
     public String getCourseId() {
         return courseId;
     }
